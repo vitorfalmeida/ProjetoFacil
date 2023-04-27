@@ -1,0 +1,120 @@
+/* Estilos para o body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+/* Estilos para o container */
+.container {
+    max-width: 95vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos para a coluna da imagem */
+.coluna-imagem {
+    width: 40vw;
+    margin-right: 5vw;
+    display: flex;
+    align-items: center;
+}
+
+.imagem {
+    max-width: 25vw;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+/* Estilos para a coluna do formulário */
+.coluna-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+  
+
+/* Estilos para o formulário */
+form {
+    background-color: #ffff;
+    padding: 2vh;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+    margin-top: 5vh;
+    width: 100%;
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 2vh;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 2vh;
+    border-radius: 1vw;
+    border: none;
+    margin-bottom: 5vh;
+    box-sizing: border-box;
+}
+
+button {
+    display: block;
+    background-color: #41b7ad;
+    color: #fff;
+    border: none;
+    padding: 2vh 4vw;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #319e91;
+}
+
+/* Estilos para a caixa de criação de conta */
+.criar-conta {
+    background-color: #fff;
+    padding: 2vh;
+    border-radius: 1vw;
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+    margin-top: 5vh;
+    width: 100%;
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+.criar-conta h2 {
+    margin-top: 0;
+}
+
+.criar-conta p {
+    margin-bottom: 5vh;
+}
+
+/* Media query para telas menores */
+@media only screen and (max-width: 768px) {
+    .coluna-imagem {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 5vh;
+    }
+
+    .coluna-formulario {
+        width: 100%;
+    }
+
+    form {
+        width: 90vw;
+        max-width: 40vw;
+    }
+}

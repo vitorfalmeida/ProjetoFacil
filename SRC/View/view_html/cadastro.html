@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Cadastro</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="../view_style/cadastro.css">
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 coluna-imagem">
+        <img class="imagem" src="../../Public/images/cadastro.jpeg" alt="Imagem de exemplo">
+      </div>
+      <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 coluna-formulario">
+        <div class="container-fluid formulario">
+
+          <div class="container" style="background-color: #41b7ad; color: rgb(255, 255, 255); font-family: 'Times New Roman', Times, serif;">
+            <h2>Crie sua conta !</h2>
+          </div><br>
+
+          <form>
+            <div class="form-group">
+              <label for="nome">Nome Completo</label>
+              <input type="text" class="form-control" placeholder="Seu Nome aqui" id="nome">
+            </div>
+            <div class="form-group">
+              <label for="cpf">CPF</label>
+              <input type="number" class="form-control" placeholder="XXX.XXX.XXX-XX" id="cpf">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" placeholder="fulano@gmail.com" id="email">
+            </div>
+            <div class="form-group">
+              <label for="nascimento">Data de Nascimento</label>
+              <input type="date" class="form-control" placeholder="Data" id="nascimento">
+            </div>
+            <div class="form-group">
+              <label for="senha1">Senha</label>
+              <input type="password" class="form-control" placeholder="Senha" id="senha1">
+            </div>
+            <div class="form-group">
+              <label for="senha2">Confirmar Senha</label>
+              <input type="password" class="form-control" placeholder="Confirmar Senha" id="senha2">
+            </div>
+            <button type="button" onclick="Criar()" class="btn btn-secondary" style="background-color: #41b7ad; width: 100%; color: rgb(255, 255, 255);">Cadastre-se</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8g
